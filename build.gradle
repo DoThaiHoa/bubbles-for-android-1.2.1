@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+    }
+}
+
+allprojects {
+    allprojects {
+        ext {
+            libraryVersion = '1.2.1'
+            mavenGroupId = 'com.txusballesteros'
+            siteUrl = 'https://github.com/txusballesteros/bubbles-for-android'
+            gitUrl = 'https://github.com/txusballesteros/bubbles-for-android.git'
+        }
+    }
+    repositories {
+        jcenter()
+    }
+}
